@@ -184,9 +184,8 @@ if (Meteor.isServer) {
 
     if (Student.find().count() === 0) {
       for (var i = 0; i < data.length; i++) {
-       Student.insert(data[i]);
+        Student.insert(data[i]);
       }
-      
     }
   });
 }

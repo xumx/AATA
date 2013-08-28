@@ -1,16 +1,9 @@
-<head>
-	<title>AATA</title>
-</head>
-
-<body>
-	{{> hello}}
-</body>
+<body>{{> hello}}</body>
 
 <template name="hello">
 	{{#each students}}
 	<div style="display:inline-block; overflow:hidden; width:130px">
 		<img src="{{photo}}" id="{{_id}}" width="75" height="100">
-		<!-- <br>{{_id}}<br> -->
 		<br>
 		<span style="color:red">{{score}}</span>
 		<br>
