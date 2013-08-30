@@ -1,13 +1,16 @@
 <body>{{> hello}}</body>
 
 <template name="hello">
+<div style="width:1000px; text-align:center;">
 	{{#each students}}
-	<div style="display:inline-block; overflow:hidden; width:130px">
-		<img src="{{photo}}" id="{{_id}}" width="75" height="100">
+	<div style="display:inline-block; overflow:hidden; width:160px;">
+		<span style="color:red;font-weight:bold;">{{score}}</span>
 		<br>
-		<span style="color:red">{{score}}</span>
+		<img src="{{photo}}" id="{{_id}}" height="100">
 		<br>
 		<span>{{name}}</span>
+		<hr>
 	</div>
 	{{/each}}
+	</div>
 </template>
